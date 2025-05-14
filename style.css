@@ -10,13 +10,16 @@ h1,
 p,
 h2,
 li,
-ul {
+ul,
+button {
   margin: 0;
   padding: 0;
   font-style: none;
   list-style: none;
   color: inherit;
   text-decoration: none;
+  background: none;
+  border: none;
 }
 .container {
   display: grid;
@@ -37,7 +40,7 @@ header nav ul {
   background: var(--cor-0);
 }
 header nav ul {
-  padding: 16px 16px 16px 10px;
+  padding: 20px 20px 20px 10px;
 }
 header nav a {
   padding: 10px;
@@ -48,19 +51,21 @@ header nav a {
   font-family: monospace;
   letter-spacing: 0.1rem;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-section {
+section,
+main {
   grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 90px 300px 1fr;
   gap: 20px;
 }
-section h1 {
+section h1,
+main h1 {
   grid-column: 1 / -1;
+  margin-bottom: 1rem;
 }
 .titulo {
   font-size: 96px;
@@ -106,8 +111,39 @@ section h1 {
   margin-bottom: 20px;
   max-width: 52ch;
 }
-.faq dl {
+#faq dl {
   grid-column: 2/-1;
+}
+#faq dt button {
+  color: #e54;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+#faq button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-color: var(--cor-0);
+}
+#faq button::after {
+  content: "⬎";
+  font-weight: bold;
+  position: absolute;
+  right: -24px;
+  top: -4px;
+}
+#faq dl {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-left: 28px;
+  margin-bottom: 32px;
 }
 .contato picture {
   grid-column: 2;
