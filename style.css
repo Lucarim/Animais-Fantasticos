@@ -78,6 +78,7 @@ main h1 {
   grid-column: 2;
   max-height: 378px;
   overflow-y: scroll;
+  cursor: pointer;
 }
 .animais-fotos::-webkit-scrollbar {
   width: 16px;
@@ -89,6 +90,23 @@ main h1 {
 }
 .animais-descricao {
   margin-left: -10px;
+}
+.js .animais-descricao {
+  display: none;
+}
+.js .animais-descricao.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-25px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 .animais-descricao h2 {
   display: flex;
