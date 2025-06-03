@@ -91,23 +91,7 @@ main h1 {
 .animais-descricao {
   margin-left: -10px;
 }
-.js .animais-descricao {
-  display: none;
-}
-.js .animais-descricao.ativo {
-  display: block;
-  animation: show 0.5s forwards;
-}
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(-25px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+
 .animais-descricao h2 {
   display: flex;
   align-items: center;
@@ -167,26 +151,6 @@ main h1 {
   margin-left: 28px;
   margin-bottom: 32px;
 }
-.js-accordion dd {
-  display: none;
-}
-.js-accordion dd.ativo {
-  display: block;
-  animation: slideDown 0.5s forwards;
-}
-#faq dt.ativo button::after {
-  content: "⬏";
-}
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
 
 #contato picture {
   grid-column: 2;
@@ -226,4 +190,55 @@ main h1 {
   font-family: monospace;
   letter-spacing: 0.05rem;
   grid-column: 1 / -1;
+}
+
+.js .animais-descricao {
+  display: none;
+}
+.js .animais-descricao.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-25px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+.js .js-accordion dd.ativo {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+.js #faq dt.ativo button::after {
+  content: "⬏";
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
 }
