@@ -14,7 +14,7 @@
 
 <body>
   <header class="container">
-    <nav class="js-menu">
+    <nav data-scroll="suave">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -24,9 +24,9 @@
     </nav>
   </header>
   <div class="container">
-    <main class="animais js-scroll" id="animais">
+    <main class="animais" id="animais" data-anime="scroll">
       <h1 class="titulo">Animais Fantásticos</h1>
-      <div class="animais-fotos js-tabmenu">
+      <div class="animais-fotos" data-tab="menu">
         <ul>
           <li>
             <img src="./img/imagem1.jpg" alt="">
@@ -48,8 +48,8 @@
           </li>
         </ul>
       </div>
-      <div class="animais-conteudo js-tabcontent">
-        <div class="animais-descricao">
+      <div class="animais-conteudo" data-tab="content">
+        <div class="animais-descricao" data-anime="show-right">
           <h2>Raposa</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
@@ -59,7 +59,7 @@
 
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </div>
-        <div class="animais-descricao">
+        <div class="animais-descricao" data-anime="show-down">
           <h2>Esquilo</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
@@ -67,13 +67,13 @@
 
           <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a raposa vermelha é a mais comum.</p>
         </div>
-        <div class="animais-descricao">
+        <div class="animais-descricao" data-anime="show-right">
           <h2>Urso</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </div>
-        <div class="animais-descricao">
+        <div class="animais-descricao" data-anime="show-down">
           <h2>Lobo</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
@@ -81,7 +81,7 @@
 
           <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a raposa vermelha é a mais comum.</p>
         </div>
-        <div class="animais-descricao">
+        <div class="animais-descricao" data-anime="show-right">
           <h2>Macaco</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
@@ -91,7 +91,7 @@
 
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </div>
-        <div class="animais-descricao">
+        <div class="animais-descricao" data-anime="show-down">
           <h2>Leão</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
@@ -99,9 +99,9 @@
         </div>
       </div>
     </main>
-    <section id="faq" class="js-scroll">
+    <section id="faq" data-anime="scroll">
       <h1 class="titulo">FAQ</h1>
-      <dl class="js-accordion">
+      <dl data-anime="accordion">
         <div>
           <dt><button aria-controls="pergunta1" aria-expanded="true">Qual a idade dos animais?</button></dt>
           <dd id="pergunta1">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
@@ -120,7 +120,7 @@
         </div>
       </dl>
     </section>
-    <section id="contato" class="js-scroll">
+    <section id="contato" data-anime="scroll">
       <h1 class="titulo">Contato</h1>
       <picture><img src="./img/mapa.png" alt=""></picture>
       <ul>
