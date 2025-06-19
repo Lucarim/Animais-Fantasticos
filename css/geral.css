@@ -231,6 +231,9 @@ section h1,
     display: flex;
     overflow-x: scroll;
   }
+  .animais-fotos::-webkit-scrollbar {
+    width: 0;
+  }
   .titulo,
   .animais-fotos,
   #faq dl,
