@@ -217,7 +217,7 @@ section h1,
     display: flex;
     flex-wrap: wrap;
   }
-  header a {
+  header nav ul a {
     display: block;
   }
   .animais-descricao,
@@ -263,6 +263,9 @@ section h1,
   }
 }
 @media (max-width: 400px) {
+  header nav ul a {
+    font-size: 0.725rem;
+  }
   .titulo {
     font-size: 32px;
     grid-column: auto;
