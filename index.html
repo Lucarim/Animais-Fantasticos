@@ -19,7 +19,7 @@
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a href="">Dev →</a></li>
+        <li><a href="login.html" data-modal="abrir">Login →</a></li>
       </ul>
     </nav>
   </header>
@@ -134,6 +134,18 @@
       <span>Todos os direitos reservados.</span>
     </footer>
   </div>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
   <script type="module" src="js/script.js"></script>
 </body>
 
