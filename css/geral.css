@@ -33,15 +33,15 @@ body {
 header nav {
   grid-column: 3/5;
 }
-header nav ul {
+.nav-menu {
   margin-top: 32px;
   display: flex;
   background: var(--cor-0);
+  flex-wrap: wrap;
+  padding: 10px;
 }
-header nav ul {
-  padding: 20px 20px 20px 10px;
-}
-header nav a {
+.nav-menu a {
+  display: block;
   padding: 10px;
   margin: 0 10px 0 0;
   text-transform: uppercase;
