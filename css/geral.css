@@ -32,13 +32,11 @@ body {
 }
 header nav {
   grid-column: 3/5;
+  background: var(--cor-0);
+  padding: 10px;
 }
 .nav-menu {
-  margin-top: 32px;
   display: flex;
-  background: var(--cor-0);
-  flex-wrap: wrap;
-  padding: 10px;
 }
 .nav-menu a {
   display: block;
@@ -208,6 +206,9 @@ section h1,
   }
 }
 @media (max-width: 600px) {
+  header nav {
+    padding: 10px 0;
+  }
   .container {
     display: block;
   }
