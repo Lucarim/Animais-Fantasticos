@@ -32,7 +32,7 @@
     display: none;
     margin: 0;
     position: absolute;
-    background-color: #fb5;
+    background-color: var(--cor-0);
     z-index: 300;
     top: 0;
     padding: 60px 0 20px 0;

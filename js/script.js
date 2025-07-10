@@ -5,6 +5,7 @@ import initAcoordion from "./modules/accordion.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initScrollSuave from "./modules/scroll-suave.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
+import initAnimaNumeros from "./modules/anima-numeros.js";
 import initScrollAnimation from "./modules/scroll-animacao.js";
 
 initModal();
@@ -14,4 +15,5 @@ initAcoordion();
 initMenuMobile();
 initScrollSuave();
 initDropdownMenu();
+initAnimaNumeros();
 initScrollAnimation();

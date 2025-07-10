@@ -4,7 +4,7 @@
 .dropdown-menu {
   position: absolute;
   top: 36px;
-  background: #e54;
+  background: var(--cor-1);
   border: 2px solid #333;
   z-index: 1;
 }
@@ -40,6 +40,6 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #e54;
+  border-bottom: 10px solid var(--cor-1);
   z-index: 10;
 }

@@ -16,7 +16,7 @@
 .modal {
   background-color: white;
   padding: 40px;
-  border: 10px solid #fb5;
+  border: 10px solid var(--cor-0);
   box-shadow: 0 0 0 10px white;
   position: relative;
   min-width: 300px;
@@ -35,7 +35,7 @@
   animation: modal 0.3 forwards;
 }
 .fechar {
-  background-color: #e54;
+  background-color: var(--cor-1);
   border: 4px solid white;
   border-radius: 50%;
   width: 50px;
@@ -65,7 +65,7 @@
 }
 .modal button[type="submit"] {
   display: block;
-  background-color: #e54;
+  background-color: var(--cor-1);
   border-radius: 4px;
   padding: 0.7rem 2rem;
   font-size: 1rem;
