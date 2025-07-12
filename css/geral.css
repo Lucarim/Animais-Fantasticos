@@ -170,6 +170,18 @@ section h1,
   height: 10px;
   background-color: var(--cor-0);
 }
+[data-semana]::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: var(--cor-1);
+}
+[data-semana].aberto::after {
+  background-color: #52cc02;
+}
 .footer {
   display: flex;
   background: var(--cor-0);
