@@ -1,6 +1,7 @@
 :root {
   --cor-0: #fb5;
   --cor-1: #e54;
+  --cor-3: #4de800;
 }
 
 html,
@@ -158,7 +159,6 @@ section h1,
   font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 #contato li + li {
   margin-top: 16px;
@@ -169,6 +169,14 @@ section h1,
   width: 20px;
   height: 10px;
   background-color: var(--cor-0);
+  margin-right: 12px;
+}
+.btc-preco {
+  margin: 0 4px;
+  background-color: var(--cor-3);
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 2px;
 }
 [data-semana]::after {
   content: "";
@@ -178,9 +186,10 @@ section h1,
   border: 1px solid black;
   border-radius: 50%;
   background-color: var(--cor-1);
+  margin-left: 12px;
 }
 [data-semana].aberto::after {
-  background-color: #52cc02;
+  background-color: var(--cor-3);
 }
 .footer {
   display: flex;
