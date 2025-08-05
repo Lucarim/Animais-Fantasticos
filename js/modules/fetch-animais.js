@@ -22,5 +22,5 @@ export default function initFetchAnimais() {
     return div;
   }
 
-  fetchAnimais("index.html/animaisapi.json");
+  fetchAnimais("/animaisapi.json");
 }
