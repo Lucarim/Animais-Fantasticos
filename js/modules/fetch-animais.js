@@ -22,7 +22,5 @@ export default function initFetchAnimais() {
     return div;
   }
 
-  fetchAnimais(
-    "./https://lucarim.github.io/Animais-Fantasticos/animaisapi.json"
-  );
+  fetchAnimais("./animaisapi.json");
 }
