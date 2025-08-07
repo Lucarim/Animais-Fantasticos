@@ -1,6 +1,6 @@
 import initModal from "./modules/modal.js";
 import ScrollSuave from "./modules/scroll-suave.js";
-import initTabNav from "./modules/tab-nav.js";
+import TabNav from "./modules/tab-nav.js";
 import initTooltip from "./modules/tooltip.js";
 import Acoordion from "./modules/accordion.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -16,8 +16,10 @@ scrollSuave.init();
 const acorddion = new Acoordion("[data-anime='accordion'] dt");
 acorddion.init();
 
+const tabNav = new TabNav("[data-tab='menu'] li", "[data-tab='content'] div");
+tabNav.init();
+
 initModal();
-initTabNav();
 initTooltip();
 initMenuMobile();
 initFetchBitcoin();
