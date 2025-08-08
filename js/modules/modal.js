@@ -23,14 +23,15 @@ export default class Modal {
     this.fecharModal.addEventListener("click", this.eventToggleModal);
     this.modal.addEventListener("click", this.cliqueForaModal);
   }
+  //fecha modal ao clicar fora
+  cliqueForaModal(event) {
+    if (event.target === this.modal) this.toggleModal();
+  }
   //inicia a classe
   init() {
     if (this.modal && this.abrirModal && this.fecharModal) {
       this.addEventModal();
     }
-  }
-  //fecha modal ao clicar fora
-  cliqueForaModal(event) {
-    if (event.target === this.modal) this.toggleModal();
+    return this;
   }
 }
