@@ -1,4 +1,4 @@
-import initModal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import TabNav from "./modules/tab-nav.js";
 import initTooltip from "./modules/tooltip.js";
@@ -19,7 +19,13 @@ acorddion.init();
 const tabNav = new TabNav("[data-tab='menu'] li", "[data-tab='content'] div");
 tabNav.init();
 
-initModal();
+const modal = new Modal(
+  "[data-modal='container']",
+  "[data-modal='abrir']",
+  "[data-modal='fechar']"
+);
+modal.init();
+
 initTooltip();
 initMenuMobile();
 initFetchBitcoin();
