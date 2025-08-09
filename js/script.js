@@ -1,7 +1,7 @@
 import Modal from "./modules/modal.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import TabNav from "./modules/tab-nav.js";
-import initTooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
 import Acoordion from "./modules/accordion.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
@@ -26,7 +26,9 @@ const modal = new Modal(
 );
 modal.init();
 
-initTooltip();
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 initMenuMobile();
 initFetchBitcoin();
 initFetchAnimais();
