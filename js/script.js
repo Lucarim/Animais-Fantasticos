@@ -4,7 +4,7 @@ import TabNav from "./modules/tab-nav.js";
 import Tooltip from "./modules/tooltip.js";
 import Acoordion from "./modules/accordion.js";
 import initMenuMobile from "./modules/menu-mobile.js";
-import initFetchBitcoin from "./modules/fetch-bitcoin.js";
+import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import initFucionamento from "./modules/funcionamento.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
@@ -31,8 +31,9 @@ tooltip.init();
 
 fetchAnimais("animaisapi.json", ".numeros-grid");
 
+fetchBitcoin("https://www.blockchain.com/ticker", ".btc-preco");
+
 initMenuMobile();
-initFetchBitcoin();
 initFucionamento();
 initDropdownMenu();
 initScrollAnimation();
