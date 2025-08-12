@@ -6,7 +6,7 @@ import Acoordion from "./modules/accordion.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import fetchAnimais from "./modules/fetch-animais.js";
-import initFucionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 import ScrollAnima from "./modules/scroll-anima.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 
@@ -38,8 +38,9 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile("[data-menu='button']", "[data-menu='list']");
 menuMobile.init();
 
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
+funcionamento.init();
+
 fetchAnimais("animaisapi.json", ".numeros-grid");
 
 fetchBitcoin("https://www.blockchain.com/ticker", ".btc-preco");
-
-initFucionamento();
