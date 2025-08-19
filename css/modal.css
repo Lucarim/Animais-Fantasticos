@@ -19,7 +19,9 @@
   border: 10px solid var(--cor-0);
   box-shadow: 0 0 0 10px white;
   position: relative;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
+  box-sizing: border-box;
 }
 @keyframes modal {
   from {
@@ -35,7 +37,7 @@
   animation: modal 0.3 forwards;
 }
 .fechar {
-  background-color: var(--cor-1);
+  background: var(--cor-1) url("../img/fechar.svg") center center no-repeat;
   border: 4px solid white;
   border-radius: 50%;
   width: 50px;
@@ -44,9 +46,6 @@
   top: -30px;
   right: -30px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
-  color: white;
-  font-family: "IBM Plex Mono" monospace;
   cursor: pointer;
 }
 .fechar:hover {
@@ -62,6 +61,8 @@
   width: 100%;
   padding: 0.7rem 0.5rem;
   box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0px;
 }
 .modal button[type="submit"] {
   display: block;
