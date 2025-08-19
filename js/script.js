@@ -1,4 +1,5 @@
 import Modal from "./modules/modal.js";
+import SlideNav from "./modules/slide.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import TabNav from "./modules/tab-nav.js";
 import Tooltip from "./modules/tooltip.js";
@@ -40,6 +41,10 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
 
 fetchAnimais("animaisapi.json", ".numeros-grid");
 
